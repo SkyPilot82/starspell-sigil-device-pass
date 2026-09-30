@@ -23,10 +23,10 @@
   h2{color:var(--gold); font-size:19px; font-weight:normal; letter-spacing:.14em; text-transform:uppercase;
      margin:52px 0 6px;}
   .sub{color:var(--dim); font-size:14px; max-width:68ch; margin:0 0 20px; font-style:italic;}
-  .cand{display:inline-block; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
-        border:1px solid; border-radius:20px; padding:2px 11px; margin-right:8px;}
-  .c1{color:var(--gold); border-color:var(--gold);}
-  .c2{color:var(--violet); border-color:var(--violet);}
+  .tag{display:inline-block; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+       border:1px solid; border-radius:20px; padding:2px 11px; margin-right:8px;}
+  .t-old{color:var(--dim); border-color:var(--dim);}
+  .t-new{color:var(--violet); border-color:var(--violet);}
   .devlabel{color:var(--dim); font-size:12px; letter-spacing:.18em; text-transform:uppercase;
             margin:0 0 8px; font-variant-numeric:tabular-nums;}
   .devlabel b{color:var(--ink); font-weight:normal;}
@@ -40,9 +40,6 @@
   @media (max-width:560px){ .phones{grid-template-columns:1fr;} }
   .ladders{display:flex; flex-direction:column; gap:26px;}
   .ladders figure{margin:0;}
-  .notecard{background:var(--card); border:1px solid var(--line); border-radius:10px;
-            padding:16px 20px; margin:20px 0 0; max-width:68ch; font-size:14.5px;}
-  .notecard b{color:var(--gold); font-weight:normal;}
   .reads{margin:18px 0 0; padding:0 0 0 1.2em; max-width:68ch;}
   .reads li{margin:9px 0;}
   .reads b{color:var(--gold); font-weight:normal;}
@@ -54,97 +51,88 @@
 <body>
 <div class="wrap">
 <header>
-  <div class="eyebrow">Starspell · Open-Sky Sigils · 2026-09-30 · Round 2 — The Rare Try-On</div>
-  <h1>Two Rares, Worn Across Devices</h1>
-  <p class="lede">Skylar's two picks from the ornate rework, cut at the one-box law
-  (<b>49:20, frame at ~85% of the box width</b>) and swapped across the device gallery.
-  Every shot is labeled with the candidate it wears:</p>
-  <p class="lede"><span class="cand c1">① The Jewel</span> fine scrollwork, crystal finials top and
-  bottom, a jeweled medallion baked at the lower left — from roll 6da4debb.<br>
-  <span class="cand c2">② The Swirl</span> flowing flourish corners and bright glow rails —
-  from roll 69ed39bf.</p>
-  <p class="meta">Neither is applied anywhere yet — the live
-  <a href="https://skypilot82.github.io/starspell-open-sky-sigils/">open-sky-sigils page</a> still wears
-  the 9/30 frame-3 pick. This page exists to rule between ① and ②.</p>
+  <div class="eyebrow">Starspell · Open-Sky Sigils · 2026-09-30 · Round 3 — The Swirl, Iconless</div>
+  <h1>The Swirl Wears the Rows Alone</h1>
+  <p class="lede">Skylar's rulings, worn together across the devices: <b>the rare is THE SWIRL</b>
+  (roll 69ed39bf), and <b>the icon roundels are gone</b> — all seven of the little circled glyphs
+  (↯ ❋ ❦) stripped from the banners, so the name and effect line center in each frame's own panel.</p>
+  <p class="meta">Still a try-on — the live
+  <a href="https://skypilot82.github.io/starspell-open-sky-sigils/">open-sky-sigils page</a> is untouched
+  until this look is blessed. Round 2 (the ①/② swap) and round 1 live in this repo's history.</p>
 </header>
 
-<h2>I · Head to Head — iPhone 16</h2>
-<p class="sub">The same pick sheet, same device, only the rare swapped.</p>
+<h2>I · Before / After — iPhone 16</h2>
+<p class="sub">Round 2's Swirl with the roundels, against the same sheet with them gone.</p>
 <div class="duo">
   <figure>
-    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone 16</b> · 393 × 852</p>
-    <div class="shot"><img src="shots/J-iphone-16--sheet.webp" alt="Pick sheet on iPhone 16 wearing the Jewel"></div>
+    <p class="devlabel"><span class="tag t-old">With icons</span><b>iPhone 16</b> · 393 × 852</p>
+    <div class="shot"><img src="shots/S-iphone-16--sheet.webp" alt="Pick sheet with icon roundels"></div>
   </figure>
   <figure>
-    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPhone 16</b> · 393 × 852</p>
-    <div class="shot"><img src="shots/S-iphone-16--sheet.webp" alt="Pick sheet on iPhone 16 wearing the Swirl"></div>
+    <p class="devlabel"><span class="tag t-new">Iconless</span><b>iPhone 16</b> · 393 × 852</p>
+    <div class="shot"><img src="shots/S3-iphone-16--sheet.webp" alt="Pick sheet with roundels removed"></div>
   </figure>
 </div>
 
-<h2>II · The Pick Sheet, Swapped</h2>
-<p class="sub">Smallest and largest phone at true relative scale, then the tablets' fixed mock.</p>
+<h2>II · The Pick Sheet</h2>
+<p class="sub">Smallest and largest phone at true relative scale, then the tablets' fixed mock — all iconless.</p>
 <div class="phones">
   <figure>
-    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPhone SE</b> · 375 × 667</p>
-    <div class="shot"><img src="shots/S-iphone-se--sheet.webp" alt="Pick sheet on iPhone SE wearing the Swirl"></div>
+    <p class="devlabel"><b>iPhone SE</b> · 375 × 667</p>
+    <div class="shot"><img src="shots/S3-iphone-se--sheet.webp" alt="Iconless pick sheet on iPhone SE"></div>
   </figure>
   <figure>
-    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone 16 Pro Max</b> · 440 × 956</p>
-    <div class="shot"><img src="shots/J-iphone-promax--sheet.webp" alt="Pick sheet on iPhone 16 Pro Max wearing the Jewel"></div>
+    <p class="devlabel"><b>iPhone 16 Pro Max</b> · 440 × 956</p>
+    <div class="shot"><img src="shots/S3-iphone-promax--sheet.webp" alt="Iconless pick sheet on iPhone 16 Pro Max"></div>
   </figure>
 </div>
 <div style="max-width:350px; margin:22px 0 0">
-  <p class="devlabel"><span class="cand c2">② The Swirl</span><b>Any iPad</b> · mock fixed at 350&nbsp;px</p>
-  <div class="shot"><img src="shots/S-ipad-air--sheet.webp" alt="Pick sheet as rendered on all tablets, wearing the Swirl"></div>
+  <p class="devlabel"><b>Any iPad</b> · mock fixed at 350&nbsp;px</p>
+  <div class="shot"><img src="shots/S3-ipad-air--sheet.webp" alt="Iconless pick sheet as rendered on all tablets"></div>
 </div>
 
-<h2>III · The Four-Rarity Ladder, Swapped</h2>
-<p class="sub">Ember Quill I&nbsp;→&nbsp;IV at each device's column width, true relative scale;
-the 780&nbsp;px cap is shown in both candidates.</p>
+<h2>III · The Four-Rarity Ladder</h2>
+<p class="sub">Ember Quill I&nbsp;→&nbsp;IV, iconless, at each device's column width — true relative scale.</p>
 <div class="ladders">
   <figure style="width:min(100%, 43.5%)">
-    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone SE</b> · column 339 px</p>
-    <div class="shot"><img src="shots/J-iphone-se--ladder.webp" alt="Rarity ladder on iPhone SE wearing the Jewel"></div>
+    <p class="devlabel"><b>iPhone SE</b> · column 339 px</p>
+    <div class="shot"><img src="shots/S3-iphone-se--ladder.webp" alt="Iconless rarity ladder on iPhone SE"></div>
   </figure>
   <figure style="width:min(100%, 45.8%)">
-    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPhone 16</b> · column 357 px</p>
-    <div class="shot"><img src="shots/S-iphone-16--ladder.webp" alt="Rarity ladder on iPhone 16 wearing the Swirl"></div>
+    <p class="devlabel"><b>iPhone 16</b> · column 357 px</p>
+    <div class="shot"><img src="shots/S3-iphone-16--ladder.webp" alt="Iconless rarity ladder on iPhone 16"></div>
   </figure>
   <figure style="width:min(100%, 51.8%)">
-    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone 16 Pro Max</b> · column 404 px</p>
-    <div class="shot"><img src="shots/J-iphone-promax--ladder.webp" alt="Rarity ladder on iPhone 16 Pro Max wearing the Jewel"></div>
+    <p class="devlabel"><b>iPhone 16 Pro Max</b> · column 404 px</p>
+    <div class="shot"><img src="shots/S3-iphone-promax--ladder.webp" alt="Iconless rarity ladder on iPhone 16 Pro Max"></div>
   </figure>
   <figure style="width:min(100%, 90.8%)">
-    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPad mini</b> · column 708 px</p>
-    <div class="shot"><img src="shots/S-ipad-mini--ladder.webp" alt="Rarity ladder on iPad mini wearing the Swirl"></div>
+    <p class="devlabel"><b>iPad mini</b> · column 708 px</p>
+    <div class="shot"><img src="shots/S3-ipad-mini--ladder.webp" alt="Iconless rarity ladder on iPad mini"></div>
   </figure>
   <figure style="width:100%">
-    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPad Air 11″ · Pro 13″ · landscape</b> · column capped at 780 px</p>
-    <div class="shot"><img src="shots/J-ipad-air--ladder.webp" alt="Rarity ladder at the 780px cap wearing the Jewel"></div>
-  </figure>
-  <figure style="width:100%">
-    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPad Air 11″ · Pro 13″ · landscape</b> · column capped at 780 px</p>
-    <div class="shot"><img src="shots/S-ipad-air--ladder.webp" alt="Rarity ladder at the 780px cap wearing the Swirl"></div>
+    <p class="devlabel"><b>iPad Air 11″ · Pro 13″ · landscape</b> · column capped at 780 px</p>
+    <div class="shot"><img src="shots/S3-ipad-air--ladder.webp" alt="Iconless rarity ladder at the 780px column cap"></div>
   </figure>
 </div>
 
 <h2>IV · The Read</h2>
 <ul class="reads">
-  <li><b>Both cut at the family shape natively</b> — no scene squash needed this round; the ornate
-  rolls came back at ~2.45–2.5:1, so both wear the one-box law untouched.</li>
-  <li><b>① The Jewel</b> carries a baked medallion at the lower left that echoes the live roundel,
-  and crystal finials that read like the epic's corner orbs. Quietest glow of the two.</li>
-  <li><b>② The Swirl</b> matches the legendary's flourish energy; its glow rails run brighter, so
-  the row reads more luminous in the stack — closest kin to the legendary's temperature.</li>
-  <li><b>Text holds on the smallest phone</b> in both — panels were re-measured per candidate
-  (Jewel 16/26/68/44, Swirl 14/28/72/48), buffer intact at SE width.</li>
+  <li><b>All seven roundels are gone</b> — phone mock and ladder both — and the text centers itself
+  in each panel (the panels are flex; nothing needed re-measuring).</li>
+  <li><b>More room for words:</b> on the SE, Phoenix Feather's effect line fits on one line again.</li>
+  <li><b>Two small circles remain, and they are paint, not icons:</b> the knob on the common's
+  upper-left frame and the dark orb at the legendary's lower-left are baked into the MJ art itself
+  (the Swirl's jewel-socket sibling had one too — the Swirl doesn't). If those should go as well,
+  that's an art retouch on the cuts — say the word.</li>
+  <li><b>Not applied yet:</b> when this look is blessed, the live sigils page gets the Swirl as the
+  rare pick and the roundel-free rows in one pass.</li>
 </ul>
 
-<footer>Round 2 captured 2026-09-30 via headless Chrome device emulation against local try-on copies —
-the live page is untouched; round 1 (the 9/30 frame-3 baseline) lives in this repo's git history ·
-full-res candidates in ~/starspell-art-sources/open-sky-sigils (cand_jewel/cand_swirl + cuts) ·
-nothing here is built — the sigil-rows build stays gated on Q1/Q2 + monuments and an explicit go ·
-SkyPilot82 (Skylar's console)</footer>
+<footer>Round 3 captured 2026-09-30 via headless Chrome device emulation against a local try-on copy —
+the live page is untouched; rounds 1–2 live in this repo's git history · full-res candidates and cuts in
+~/starspell-art-sources/open-sky-sigils · nothing here is built — the sigil-rows build stays gated on
+Q1/Q2 + monuments and an explicit go · SkyPilot82 (Skylar's console)</footer>
 </div>
 </body>
 </html>
