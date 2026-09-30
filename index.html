@@ -4,13 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>STARSPELL · Sigil Rows Device PassSigil Rows Device Pass</title>
-</head>
-<body>
-
+<title>STARSPELL · Sigil Rows Device Pass</title>
 <style>
   :root{
-    --bg:#0a0e1f; --card:#121732; --line:#232a52; --gold:#e8c76a; --dim:#8a94c4; --ink:#dfe5ff;
+    --bg:#0a0e1f; --card:#121732; --line:#232a52; --gold:#e8c76a; --dim:#8a94c4;
+    --ink:#dfe5ff; --violet:#b9a6ff;
   }
   body{background:var(--bg); color:var(--ink); font:16px/1.62 Georgia,'Times New Roman',serif;
        margin:0; padding:0 18px 72px;}
@@ -18,25 +16,32 @@
   header{padding:54px 0 10px; border-bottom:1px solid var(--line); margin-bottom:34px;}
   .eyebrow{color:var(--dim); font-size:12.5px; letter-spacing:.24em; text-transform:uppercase;}
   h1{color:var(--gold); font-size:34px; font-weight:normal; margin:10px 0 12px; letter-spacing:.02em; text-wrap:balance;}
-  .lede{max-width:64ch; color:var(--ink); margin:0 0 8px;}
+  .lede{max-width:64ch; margin:0 0 8px;}
   .lede b{color:var(--gold); font-weight:normal;}
-  .meta{color:var(--dim); font-size:13.5px; font-variant-numeric:tabular-nums;}
+  .meta{color:var(--dim); font-size:13.5px;}
   .meta a{color:var(--dim);}
   h2{color:var(--gold); font-size:19px; font-weight:normal; letter-spacing:.14em; text-transform:uppercase;
      margin:52px 0 6px;}
   .sub{color:var(--dim); font-size:14px; max-width:68ch; margin:0 0 20px; font-style:italic;}
+  .cand{display:inline-block; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+        border:1px solid; border-radius:20px; padding:2px 11px; margin-right:8px;}
+  .c1{color:var(--gold); border-color:var(--gold);}
+  .c2{color:var(--violet); border-color:var(--violet);}
   .devlabel{color:var(--dim); font-size:12px; letter-spacing:.18em; text-transform:uppercase;
             margin:0 0 8px; font-variant-numeric:tabular-nums;}
   .devlabel b{color:var(--ink); font-weight:normal;}
   .shot{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px;}
   .shot img{display:block; width:100%; height:auto; border-radius:6px;}
-  .phones{display:grid; grid-template-columns:339fr 357fr 404fr; gap:18px; align-items:start;}
+  .duo{display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:start;}
+  .duo figure{margin:0;}
+  @media (max-width:560px){ .duo{grid-template-columns:1fr;} }
+  .phones{display:grid; grid-template-columns:339fr 404fr; gap:18px; align-items:start;}
   .phones figure{margin:0;}
   @media (max-width:560px){ .phones{grid-template-columns:1fr;} }
   .ladders{display:flex; flex-direction:column; gap:26px;}
   .ladders figure{margin:0;}
   .notecard{background:var(--card); border:1px solid var(--line); border-radius:10px;
-            padding:16px 20px; margin:20px 0 0; max-width:68ch; font-size:14.5px; color:var(--ink);}
+            padding:16px 20px; margin:20px 0 0; max-width:68ch; font-size:14.5px;}
   .notecard b{color:var(--gold); font-weight:normal;}
   .reads{margin:18px 0 0; padding:0 0 0 1.2em; max-width:68ch;}
   .reads li{margin:9px 0;}
@@ -45,87 +50,101 @@
          color:var(--dim); font-size:13px;}
   a{color:var(--gold);}
 </style>
+</head>
+<body>
 <div class="wrap">
 <header>
-  <div class="eyebrow">Starspell · Open-Sky Sigils · 2026-09-30</div>
-  <h1>The Sigil Rows Across Devices</h1>
-  <p class="lede">The live review page, rendered through Chrome's device emulation at seven real
-  viewports — after the one-box law landed (<b>every rarity row is a 49:20 box, frame at ~85% of its
-  width</b>) and all four frame picks were ruled. Everything below is shown at <b>true relative
-  scale</b> within its section: a wider device really is wider on this page.</p>
-  <p class="meta">Source: <a href="https://skypilot82.github.io/starspell-open-sky-sigils/">skypilot82.github.io/starspell-open-sky-sigils</a>
-  · picks common 4 · rare 9/30-3 · epic 3 · legendary 4</p>
+  <div class="eyebrow">Starspell · Open-Sky Sigils · 2026-09-30 · Round 2 — The Rare Try-On</div>
+  <h1>Two Rares, Worn Across Devices</h1>
+  <p class="lede">Skylar's two picks from the ornate rework, cut at the one-box law
+  (<b>49:20, frame at ~85% of the box width</b>) and swapped across the device gallery.
+  Every shot is labeled with the candidate it wears:</p>
+  <p class="lede"><span class="cand c1">① The Jewel</span> fine scrollwork, crystal finials top and
+  bottom, a jeweled medallion baked at the lower left — from roll 6da4debb.<br>
+  <span class="cand c2">② The Swirl</span> flowing flourish corners and bright glow rails —
+  from roll 69ed39bf.</p>
+  <p class="meta">Neither is applied anywhere yet — the live
+  <a href="https://skypilot82.github.io/starspell-open-sky-sigils/">open-sky-sigils page</a> still wears
+  the 9/30 frame-3 pick. This page exists to rule between ① and ②.</p>
 </header>
 
-<h2>I · The Pick Sheet on Phones</h2>
-<p class="sub">The CHOOSE&nbsp;A&nbsp;SIGIL mock at each phone's own width — the surface Skylar's
-screenshot flagged, now with the three boxes identical on every size.</p>
+<h2>I · Head to Head — iPhone 16</h2>
+<p class="sub">The same pick sheet, same device, only the rare swapped.</p>
+<div class="duo">
+  <figure>
+    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone 16</b> · 393 × 852</p>
+    <div class="shot"><img src="shots/J-iphone-16--sheet.webp" alt="Pick sheet on iPhone 16 wearing the Jewel"></div>
+  </figure>
+  <figure>
+    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPhone 16</b> · 393 × 852</p>
+    <div class="shot"><img src="shots/S-iphone-16--sheet.webp" alt="Pick sheet on iPhone 16 wearing the Swirl"></div>
+  </figure>
+</div>
+
+<h2>II · The Pick Sheet, Swapped</h2>
+<p class="sub">Smallest and largest phone at true relative scale, then the tablets' fixed mock.</p>
 <div class="phones">
   <figure>
-    <p class="devlabel"><b>iPhone SE</b> · 375 × 667</p>
-    <div class="shot"><img src="shots/iphone-se--sheet.webp" alt="Pick sheet on iPhone SE"></div>
+    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPhone SE</b> · 375 × 667</p>
+    <div class="shot"><img src="shots/S-iphone-se--sheet.webp" alt="Pick sheet on iPhone SE wearing the Swirl"></div>
   </figure>
   <figure>
-    <p class="devlabel"><b>iPhone 16</b> · 393 × 852</p>
-    <div class="shot"><img src="shots/iphone-16--sheet.webp" alt="Pick sheet on iPhone 16"></div>
-  </figure>
-  <figure>
-    <p class="devlabel"><b>iPhone 16 Pro Max</b> · 440 × 956</p>
-    <div class="shot"><img src="shots/iphone-promax--sheet.webp" alt="Pick sheet on iPhone 16 Pro Max"></div>
+    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone 16 Pro Max</b> · 440 × 956</p>
+    <div class="shot"><img src="shots/J-iphone-promax--sheet.webp" alt="Pick sheet on iPhone 16 Pro Max wearing the Jewel"></div>
   </figure>
 </div>
-<div class="notecard"><b>On every tablet the sheet is identical</b> — the review page pins its phone
-mock at 350&nbsp;px to stay honest about the surface it mocks, so iPad mini through iPad&nbsp;Pro&nbsp;13″
-(portrait or landscape) all render the sheet exactly as below.</div>
-<div style="max-width:350px; margin:18px 0 0">
-  <p class="devlabel"><b>Any iPad</b> · mock fixed at 350&nbsp;px</p>
-  <div class="shot"><img src="shots/ipad-air--sheet.webp" alt="Pick sheet as rendered on all tablets"></div>
+<div style="max-width:350px; margin:22px 0 0">
+  <p class="devlabel"><span class="cand c2">② The Swirl</span><b>Any iPad</b> · mock fixed at 350&nbsp;px</p>
+  <div class="shot"><img src="shots/S-ipad-air--sheet.webp" alt="Pick sheet as rendered on all tablets, wearing the Swirl"></div>
 </div>
 
-<h2>II · The Four-Rarity Ladder</h2>
-<p class="sub">Ember Quill climbing I&nbsp;→&nbsp;IV at each device's content width. The page's column
-caps at 780&nbsp;px, so iPad Air&nbsp;11″, iPad Pro&nbsp;13″ and landscape all draw the same ladder —
-shown once.</p>
+<h2>III · The Four-Rarity Ladder, Swapped</h2>
+<p class="sub">Ember Quill I&nbsp;→&nbsp;IV at each device's column width, true relative scale;
+the 780&nbsp;px cap is shown in both candidates.</p>
 <div class="ladders">
   <figure style="width:min(100%, 43.5%)">
-    <p class="devlabel"><b>iPhone SE</b> · column 339 px</p>
-    <div class="shot"><img src="shots/iphone-se--ladder.webp" alt="Rarity ladder on iPhone SE"></div>
+    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone SE</b> · column 339 px</p>
+    <div class="shot"><img src="shots/J-iphone-se--ladder.webp" alt="Rarity ladder on iPhone SE wearing the Jewel"></div>
   </figure>
   <figure style="width:min(100%, 45.8%)">
-    <p class="devlabel"><b>iPhone 16</b> · column 357 px</p>
-    <div class="shot"><img src="shots/iphone-16--ladder.webp" alt="Rarity ladder on iPhone 16"></div>
+    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPhone 16</b> · column 357 px</p>
+    <div class="shot"><img src="shots/S-iphone-16--ladder.webp" alt="Rarity ladder on iPhone 16 wearing the Swirl"></div>
   </figure>
   <figure style="width:min(100%, 51.8%)">
-    <p class="devlabel"><b>iPhone 16 Pro Max</b> · column 404 px</p>
-    <div class="shot"><img src="shots/iphone-promax--ladder.webp" alt="Rarity ladder on iPhone 16 Pro Max"></div>
+    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPhone 16 Pro Max</b> · column 404 px</p>
+    <div class="shot"><img src="shots/J-iphone-promax--ladder.webp" alt="Rarity ladder on iPhone 16 Pro Max wearing the Jewel"></div>
   </figure>
   <figure style="width:min(100%, 90.8%)">
-    <p class="devlabel"><b>iPad mini</b> · column 708 px</p>
-    <div class="shot"><img src="shots/ipad-mini--ladder.webp" alt="Rarity ladder on iPad mini"></div>
+    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPad mini</b> · column 708 px</p>
+    <div class="shot"><img src="shots/S-ipad-mini--ladder.webp" alt="Rarity ladder on iPad mini wearing the Swirl"></div>
   </figure>
   <figure style="width:100%">
-    <p class="devlabel"><b>iPad Air 11″ · iPad Pro 13″ · landscape</b> · column capped at 780 px</p>
-    <div class="shot"><img src="shots/ipad-air--ladder.webp" alt="Rarity ladder at the 780px column cap, identical on large iPads"></div>
+    <p class="devlabel"><span class="cand c1">① The Jewel</span><b>iPad Air 11″ · Pro 13″ · landscape</b> · column capped at 780 px</p>
+    <div class="shot"><img src="shots/J-ipad-air--ladder.webp" alt="Rarity ladder at the 780px cap wearing the Jewel"></div>
+  </figure>
+  <figure style="width:100%">
+    <p class="devlabel"><span class="cand c2">② The Swirl</span><b>iPad Air 11″ · Pro 13″ · landscape</b> · column capped at 780 px</p>
+    <div class="shot"><img src="shots/S-ipad-air--ladder.webp" alt="Rarity ladder at the 780px cap wearing the Swirl"></div>
   </figure>
 </div>
 
-<h2>III · The Read</h2>
+<h2>IV · The Read</h2>
 <ul class="reads">
-  <li><b>The one-box law holds everywhere.</b> On every viewport the four rows render pixel-identical
-  boxes; no device brings back the towering blue or the short common.</li>
-  <li><b>Smallest phone still reads.</b> On the SE, PHOENIX FEATHER's effect line wraps to two lines
-  inside its panel — comfortably, with the buffer intact. Nothing collides or overflows.</li>
-  <li><b>Tablets are gated by the page, not the design.</b> This is the review page's own column
-  doing the capping at 780&nbsp;px. In the game the rows are laid out by the engine at the board's
-  scale — tablet truth ships with the build, not this mock.</li>
-  <li><b>Landscape adds nothing new</b> — same 780&nbsp;px column, same ladder.</li>
+  <li><b>Both cut at the family shape natively</b> — no scene squash needed this round; the ornate
+  rolls came back at ~2.45–2.5:1, so both wear the one-box law untouched.</li>
+  <li><b>① The Jewel</b> carries a baked medallion at the lower left that echoes the live roundel,
+  and crystal finials that read like the epic's corner orbs. Quietest glow of the two.</li>
+  <li><b>② The Swirl</b> matches the legendary's flourish energy; its glow rails run brighter, so
+  the row reads more luminous in the stack — closest kin to the legendary's temperature.</li>
+  <li><b>Text holds on the smallest phone</b> in both — panels were re-measured per candidate
+  (Jewel 16/26/68/44, Swirl 14/28/72/48), buffer intact at SE width.</li>
 </ul>
 
-<footer>Captured 2026-09-30 from the live page via headless Chrome device emulation
-(mobile metrics + touch, DPR&nbsp;2) · full-res captures in ~/starspell-art-sources/open-sky-sigils/devpass-2026-09-30 ·
+<footer>Round 2 captured 2026-09-30 via headless Chrome device emulation against local try-on copies —
+the live page is untouched; round 1 (the 9/30 frame-3 baseline) lives in this repo's git history ·
+full-res candidates in ~/starspell-art-sources/open-sky-sigils (cand_jewel/cand_swirl + cuts) ·
 nothing here is built — the sigil-rows build stays gated on Q1/Q2 + monuments and an explicit go ·
 SkyPilot82 (Skylar's console)</footer>
 </div>
-
 </body>
 </html>
